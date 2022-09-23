@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div>
-      Developed by billle & hvnganh
+      Developed by billle &amp; hvnganh
     </div>
   )
 }

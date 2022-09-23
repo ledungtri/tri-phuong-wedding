@@ -6,7 +6,7 @@ export default function Layout({ children }) {
   return (
     <>
       <Head>
-        <title>Trí & Phương's Wedding</title>
+        <title>Trí &amp; Phương&#x27;s Wedding</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
