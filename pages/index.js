@@ -1,9 +1,10 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">
-        Trí & Phương's Wedding
-      </h1>
+      <Link href="/response">PHÚC ĐÁP</Link>
+      <Link href="/map">BẢN ĐỒ ĐƯỜNG ĐI</Link>
     </div>
   )
 }
