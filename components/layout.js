@@ -6,23 +6,19 @@ import { useTransition } from "react";
 export default function Layout({ children }) {
 
   return (
-    <div className="overflow-hidden relative">
+    <div className="overflow-hidden relative text-white">
       <Head>
         <title>Trí &amp; Phương&#x27;s Wedding</title>
         <link rel="icon" href="/wedding-icon.png" />
       </Head>
       <div className="max-w-1xl">
-              <div className="select-none bg-wedding_bg bg-cover bg-right bg-no-repeat h-[100vh] w-full absolute z-[-1]">
-              </div>
-          <div className="h-[100vh] text-white z-10 bg-black/40">
-            <div className="header h-[10%] select-none">
-              <Navbar />
-            </div>
-            <main className="text-center content h-[80%] mt-4">{children}</main>
-            <div className="footer h-[10%] select-none">
-              <Footer />
-            </div>
+        <div className="bg-wedding_bg bg-cover bg-center bg-no-repeat h-screen">
+          <div className="h-screen bg-black/40">
+            <Navbar />
+            <main className="text-center content">{children}</main>
+            <Footer />
           </div>
+        </div>
       </div>
     </div>
   );
