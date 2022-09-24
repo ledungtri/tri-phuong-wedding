@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage : {
         'wedding_bg': "url('../public/background.jpg')",
+        'thanks_bg': "url('../public/thanks3.png')"
       }
     },
   },
