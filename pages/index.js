@@ -5,7 +5,7 @@ export default function Home() {
     <div className="px-4 h-screen grid gap-4 grid-cols-1 grid-rows-2">
       <div className='flex'>
         <div className="m-auto">
-          <h1 className="uppercase text-3xl font-bold italic flex item-center">"Hãy đến mà xem"</h1>
+          <h1 className="uppercase text-3xl font-bold italic flex item-center">&quot;Hãy đến mà xem&rdquo;</h1>
           <p className="">(Ga 1, 39)</p>
         </div>
       </div>
