@@ -11,10 +11,10 @@ export default function Home() {
       </div>
       <div className='flex items-end p-5'>
         <div className="">
-          <button className="border-solid border-amber-200 text-amber-200 font-bold text-xl capitalize border-4 w-[300px] h-[50px] rounded-3xl m-2">
+          <button className="border-solid border-amber-200 text-amber-200 font-bold text-xl capitalize border-[4px] w-[280px] h-[50px] rounded-3xl m-2">
             <Link href='response'>PHÚC ĐÁP</Link>
           </button>
-          <button className="border-solid border-amber-200 text-amber-200 font-bold text-xl capitalize border-4 w-[300px] h-[50px] rounded-3xl m-2">
+          <button className="border-solid border-amber-200 text-amber-200 font-bold text-xl capitalize border-[4px] w-[280px] h-[50px] rounded-3xl m-2">
             <Link href='map'>BẢN ĐỒ ĐƯỜNG ĐI</Link>
           </button>
         </div>
