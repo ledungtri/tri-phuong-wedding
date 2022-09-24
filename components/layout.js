@@ -1,25 +1,28 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
 import Head from "next/head";
+import { useTransition } from "react";
 
 export default function Layout({ children }) {
+
   return (
-    <div className="text-center">
+    <div className="overflow-hidden relative">
       <Head>
         <title>Trí &amp; Phương&#x27;s Wedding</title>
         <link rel="icon" href="/wedding-icon.png" />
       </Head>
-      <div className="px-2 py-3 max-w-2xl">
-        <div className="bg-wedding_bg bg-contain bg-no-repeat h-[600px] text-white">
-          <div className="header">
-            <Navbar />
+      <div className="max-w-1xl">
+              <div className="select-none bg-wedding_bg bg-cover bg-right bg-no-repeat h-[100vh] w-full absolute z-[-1]">
+              </div>
+          <div className="h-[100vh] text-white z-10 bg-black/40">
+            <div className="header h-[10%] select-none">
+              <Navbar />
+            </div>
+            <main className="text-center content h-[80%] mt-4">{children}</main>
+            <div className="footer h-[10%] select-none">
+              <Footer />
+            </div>
           </div>
-          <main className="text-center content">{children}</main>
-          <div className="footer">
-            <Footer />
-          </div>
-        </div>
-
       </div>
     </div>
   );
