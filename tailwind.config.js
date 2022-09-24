@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage : {
         'wedding_bg': "url('../public/background.jpg')",
+        'wedding_bg_phone': "url('../public/background-small.jpg')",
       }
     },
   },
