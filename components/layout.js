@@ -11,8 +11,8 @@ export default function Layout({ children }) {
         <title>Trí &amp; Phương&#x27;s Wedding</title>
         <link rel="icon" href="/wedding-icon.png" />
       </Head>
-      <div className="max-w-1xl">
-        <div className=" md:bg-wedding_bg bg-wedding_bg_phone bg-cover bg-center bg-no-repeat h-screen">
+      <div className="max-w-1xl tracking-wider">
+        <div className="md:bg-wedding_bg bg-wedding_bg_phone bg-cover bg-center bg-no-repeat h-screen">
           <div className="h-screen bg-black/40">
             <Navbar />
             <main className="text-center content">{children}</main>
