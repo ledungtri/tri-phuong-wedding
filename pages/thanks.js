@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Thank() {
   return (
-    <div className="xl:w-full xl:flex xl:justify-center">
+    <div className="xl:w-full xl:flex xl:justify-center xl:bg-wedding_bg xl:z-0 xl:bg-no-repeat xl:bg-cover">
       <div className="xl:w-[800px] flex h-screen justify-center bg-thanks_bg bg-cover bg-center">
         <div className="xl:mt-[25%] mt-[50%]">
           <div className="mb-8">
