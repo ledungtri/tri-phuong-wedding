@@ -4,10 +4,7 @@ import Image from "next/future/image";
 import Link from "next/link";
 import Form from "../components/form";
 // Image
-import bg_desktop from "../public/decor1.JPG";
-import bg_desktop2 from "../public/decor2.JPG";
-import cute1 from "../public/cute1.JPG";
-import cute2 from "../public/cute2.JPG";
+import bg_desktop from "../public/background.jpg";
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -26,38 +23,25 @@ export default function Home() {
       {/* MAIN PAGE RESPONSIVE */}
       {/* BACKGROUND DESKTOP */}
       <div className="flex xl:flex-col xl:items-center xl:py-2 xl:max-w-7xl xl:h-[70vh] xl:w-full xl:relative xl:bg-white">
+        
         <Image
-          className="hidden appear-desktop xl:flex xl:rounded-xl xl:absolute xl:h-full xl:w-auto xl:left-[-29%]"
-          src={cute1}
-          alt="bg"
-        />
-        <Image
-          className="hidden appear-desktop xl:flex xl:rounded-xl xl:absolute xl:h-full xl:w-auto xl:left-[11%]"
+          className="hidden appear-desktop xl:flex xl:rounded-xl xl:absolute xl:h-full xl:w-auto xl:right-0 xl:left-[34%]"
           src={bg_desktop}
           alt="bg"
         />
         <div className="m-auto xl:z-10 xl:my-10">
-          <h1 className="xl:text-[#544c48] xl:text-4xl loichua uppercase text-3xl font-bold italic flex item-center">
+          <h1 className="xl:text-amber-200 xl:text-4xl loichua uppercase text-3xl font-bold italic flex item-center">
             &ldquo;Hãy đến mà xem&rdquo;
           </h1>
-          <p className="xl:text-[#544c48] xl:text-xl loichua text-sm font-thin">
+          <p className="xl:text-amber-200 xl:text-xl loichua text-sm font-thin">
             (Ga 1, 39)
           </p>
         </div>
-        <Image
-          className="hidden appear-desktop xl:flex xl:rounded-xl xl:absolute xl:h-full xl:w-auto xl:right-[11%]"
-          src={bg_desktop2}
-          alt="bg"
-        />
-        <Image
-          className="hidden appear-desktop xl:flex xl:rounded-xl xl:absolute xl:h-full xl:w-auto xl:right-[-29%]"
-          src={cute2}
-          alt="bg"
-        />
+        
       </div>
       {/* RESPONSE */}
       <div className="hidden appear-desktop xl:flex xl:flex-col xl:w-full xl:items-center xl:justify-center xl:bg-white xl:mt-10 xl:pt-5 xl:border-[#f0e0d8] xl:border-solid xl:border-t xl:pb-5">
-        <h1 className="xl:text-[#544c48] xl:text-4xl xl:uppercase xl:italic xl:font-bold xl:mb-4">
+        <h1 className="xl:text-amber-200 xl:text-4xl xl:uppercase xl:italic xl:font-bold xl:mb-4">
           Phúc Đáp
         </h1>
         <div className="xl:w-[20%] xl:border xl:border-solid xl:border-[#f0e0d8] rounded-lg xl:p-2">
@@ -66,12 +50,12 @@ export default function Home() {
       </div>
       {/* MAP */}
       <div className="hidden appear-desktop xl:flex xl:flex-col xl:w-full xl:items-center xl:justify-center xl:bg-white xl:mt-10 xl:pt-5 xl:border-[#f0e0d8] xl:border-solid xl:border-t xl:pb-10">
-        <h1 className="xl:text-[#544c48] xl:text-4xl xl:uppercase xl:italic xl:font-bold xl:mb-4">
+        <h1 className="xl:text-amber-200 xl:text-4xl xl:uppercase xl:italic xl:font-bold xl:mb-4">
           Bản Đồ Đường Đi
         </h1>
         <div className="xl:grid xl:gap-4 xl:grid-cols-2 xl:w-full xl:h-[50vh]">
           <div className="xl:text-center">
-            <h2 className="xl:text-[#544c48] xl:font-bold xl:text-2xl xl:uppercase xl:my-2">Nhà Thờ Mẫu Tâm</h2>
+            <h2 className="xl:text-amber-200 xl:font-bold xl:text-2xl xl:uppercase xl:my-2">Nhà Thờ Mẫu Tâm</h2>
             {loading ? <div className="xl:w-full xl:h-[100%] xl:animate-pulse xl:ease-linear xl:bg-[#ccc]"></div>
             :
               <iframe
@@ -85,7 +69,7 @@ export default function Home() {
             ></iframe>}
           </div>
           <div className="xl:text-center">
-            <h2 className="xl:text-[#544c48] xl:font-bold xl:text-2xl xl:uppercase xl:my-2">Nhà hàng Crystal Palace</h2>
+            <h2 className="xl:text-amber-200 xl:font-bold xl:text-2xl xl:uppercase xl:my-2">Nhà hàng Crystal Palace</h2>
             {loading ? <div className="xl:w-full xl:h-[100%] xl:animate-pulse xl:ease-linear xl:bg-[#ccc]"></div>
             :
               <iframe
