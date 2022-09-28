@@ -17,8 +17,8 @@ export default function MapFrame({ title, url, subtitles }) {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      {subtitles.map(subtitle => (
-        <h3 className='italic'>
+      {subtitles.map((subtitle, key) => (
+        <h3 className='italic' key={key}>
           {subtitle}
         </h3>
       ))}

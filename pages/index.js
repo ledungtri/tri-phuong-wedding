@@ -6,8 +6,8 @@ export default function Home() {
   const pages = [Greeting, Response, Map]
   return (
     <div className='snap-y snap-mandatory h-screen overflow-y-scroll'>
-      {pages.map(page => (
-        <section className='snap-start h-screen'>
+      {pages.map((page, key) => (
+        <section className='snap-start h-screen' key={key}>
           {page()}
         </section>
       ))}
