@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 import Image from "next/future/image";
 import Link from "next/link";
-import Form from "../components/form";
+import Form from "../components/response/form";
 // Image
 import bg_desktop from "../public/background.jpg";
 
