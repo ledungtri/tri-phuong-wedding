@@ -1,7 +1,7 @@
 import Navbar from "./navbar";
 import Footer from "./footer";
-import WebsiteHeader from "./response/websiteHeader";
-import BackgroundWrapper from "./backgroundWrapper";
+import WebsiteHeader from "./websiteHeader";
+import Background from "./background";
 
 export default function Layout({ children }) {
 
@@ -10,10 +10,11 @@ export default function Layout({ children }) {
       <WebsiteHeader/>
       <Navbar />
 
-      <BackgroundWrapper>
-        <main className="text-center content h-max">{children}</main>
-      </BackgroundWrapper>
-
+      <Background>
+        <main className="text-center content h-max">
+          {children}
+        </main>
+      </Background>
       <Footer />
     </div>
   );

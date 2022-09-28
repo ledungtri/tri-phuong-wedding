@@ -35,8 +35,10 @@ function Form() {
     <form className="flex flex-col" onSubmit={handleSubmit}>
       <TextInputField label='Quý danh' fieldName='name' object={response} handleChange={handleChange}/>
 
-      <RadioButtonField label='Tham dự' value={true} fieldName='attend' handleChange={handleChange}/>
-      <RadioButtonField label='Không tham dự' value={false} fieldName='attend' handleChange={handleChange}/>
+      <div className='flex justify-between'>
+        <RadioButtonField label='Tham dự' value={true} fieldName='attend' handleChange={handleChange}/>
+        <RadioButtonField label='Không tham dự' value={false} fieldName='attend' handleChange={handleChange}/>
+      </div>
 
       <TextInputField label='Số lượng khách' fieldName='number' object={response} handleChange={handleChange}/>
       <TextInputField label='Điện thoại liên lạc' fieldName='phone' object={response} handleChange={handleChange}/>
