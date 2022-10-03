@@ -4,9 +4,9 @@ export default function Map() {
   return (
     <div className="px-4 flex h-screen">
       <div className='my-auto w-full'>
-        <h1 className="text-3xl text-amber-200 font-bold mb-6">BẢN ĐỒ ĐƯỜNG ĐI</h1>
+        <h1 className="text-3xl text-orange-400/80 font-bold mb-6">BẢN ĐỒ ĐƯỜNG ĐI</h1>
 
-        <div className='flex md:mx-36 gap-10 md:gap-24 flex-col md:flex-row'>
+        <div className='flex md:mx-36 gap-5 md:gap-24 flex-col md:flex-row'>
           <MapFrame
             title='Nhà thờ Mẫu Tâm'
             url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.8278147019746!2d106.70464261538773!3d10.747750192340941!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f7666e90cd9%3A0x7c0d5a124f8008b3!2sMau%20Tam%20Church!5e0!3m2!1sen!2s!4v1663954587899!5m2!1sen!2s"

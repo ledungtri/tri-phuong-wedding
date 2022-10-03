@@ -1,6 +1,6 @@
 export default function Greeting() {
   return (
-    <div className="px-4 h-screen grid gap-4">
+    <div className="px-4 h-screen grid gap-4 text-white">
       <div className="flex">
         <div className="m-auto">
           <h1 className="font-bold italic text-3xl md:text-6xl">

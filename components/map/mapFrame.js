@@ -1,7 +1,7 @@
 export default function MapFrame({ title, url, subtitles }) {
   return (
     <div className="h-full w-full">
-      <h2 className="mb-2 font-semibold text-xl">{title}</h2>
+      <h2 className="font-bold text-xl bg-navy/60 rounded-t-full py-2">{title}</h2>
       <iframe
         className="w-full h-[200px] md:h-[500px]"
         src={url}
@@ -10,11 +10,13 @@ export default function MapFrame({ title, url, subtitles }) {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      {subtitles.map((subtitle, key) => (
-        <h3 className='italic' key={key}>
-          {subtitle}
-        </h3>
-      ))}
+      <div className='bg-navy/60 rounded-b-xl py-1'>
+        {subtitles.map((subtitle, key) => (
+          <h3 className='italic' key={key}>
+            {subtitle}
+          </h3>
+        ))}
+      </div>
     </div>
   );
 }

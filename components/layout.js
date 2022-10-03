@@ -6,7 +6,7 @@ import Background from "./background";
 export default function Layout({ children }) {
 
   return (
-    <div className="relative text-white">
+    <div className="relative text-beige">
       <WebsiteHeader/>
       <Navbar />
 

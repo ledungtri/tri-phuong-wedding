@@ -43,7 +43,7 @@ function Form() {
       <TextInputField label='Số lượng khách' fieldName='number' object={response} handleChange={handleChange}/>
       <TextInputField label='Điện thoại liên lạc' fieldName='phone' object={response} handleChange={handleChange}/>
 
-      <button type="submit" className="text-white font-bold xl:text-[#544c48] w-full bg-amber-200 rounded h-10">
+      <button type="submit" className="font-bold text-beige w-full bg-navy/80 rounded h-10">
         GỬI
       </button>
     </form>
