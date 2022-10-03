@@ -10,7 +10,7 @@ export default function MapFrame({ title, url, subtitles }) {
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
-      <div className='bg-navy/60 rounded-b-xl py-1'>
+      <div className='bg-navy/60 rounded-b-xl py-1 text-white text-xs'>
         {subtitles.map((subtitle, key) => (
           <h3 className='italic' key={key}>
             {subtitle}
