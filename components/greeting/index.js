@@ -2,7 +2,7 @@ export default function Greeting() {
   return (
     <div className="px-4 h-screen grid gap-4">
       <div className="flex">
-        <div className="m-auto loichua">
+        <div className="m-auto">
           <h1 className="text-3xl font-bold italic">
             &ldquo;HÃY ĐẾN MÀ XEM&rdquo;
           </h1>
