@@ -8,8 +8,8 @@ export default function Response() {
           PHÚC ĐÁP
         </h1>
         <div className="flex flex-col items-start w-full font-bold text-2xl mb-10">
-          <h2 className="date mt-2">Thứ Hai, Ngày 1 Tháng 12</h2>
-          <h2 className="date mt-2">Vào Lúc 19:00 PM</h2>
+          <h2 className="date mt-2">Thứ Bảy, Ngày 17 Tháng 12</h2>
+          <h2 className="date mt-2">Vào Lúc 18:00 PM</h2>
           <h2 className="date mt-2">Nhà Hàng Crystal Palace</h2>
         </div>
         <div className="w-full">
