@@ -1,6 +1,6 @@
 export default function Background({ children }) {
   return (
-    <div className="md:bg-wedding_bg bg-wedding_bg_phone bg-cover bg-center bg-no-repeat h-screen">
+    <div className="h-screen bg-cover bg-center bg-no-repeat bg-wedding_bg_phone md:bg-wedding_bg">
       <div className="h-screen bg-black/40">
         {children}
       </div>

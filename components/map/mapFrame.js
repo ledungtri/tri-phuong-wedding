@@ -1,19 +1,12 @@
-import {useState} from "react";
-
 export default function MapFrame({ title, url, subtitles }) {
-  const [loading, setLoading] = useState(true)
-
   return (
-    <div className="h-full">
+    <div className="h-full w-full">
       <h2 className="mb-2 font-semibold text-xl">{title}</h2>
-      <div className={`${loading ? '' : 'hidden'} w-full h-[80%] animate-pulse ease-linear bg-white`}></div>
       <iframe
-        className="w-full"
+        className="w-full h-[200px] md:h-[500px]"
         src={url}
-        height='200'
         allowFullScreen=""
-        loading="lazy"
-        onLoad={() => setLoading(false)}
+        loading="eager"
         referrerPolicy="no-referrer-when-downgrade"
       ></iframe>
 
