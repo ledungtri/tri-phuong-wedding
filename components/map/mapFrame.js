@@ -3,7 +3,7 @@ export default function MapFrame({ title, url, subtitles }) {
     <div className="h-full w-full">
       <h2 className="font-bold text-xl bg-navy/60 rounded-t-full py-2">{title}</h2>
       <iframe
-        className="w-full h-[200px] md:h-[500px]"
+        className="w-full h-[120px] md:h-[300px]"
         src={url}
         allowFullScreen=""
         loading="eager"

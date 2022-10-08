@@ -3,7 +3,7 @@ import MapFrame from "./mapFrame";
 export default function Map() {
   return (
     <div className="px-4 flex h-screen">
-      <div className='mt-32 w-full'>
+      <div className='m-auto w-full'>
         <h1 className="text-3xl text-orange-400/80 font-bold mb-6">BẢN ĐỒ ĐƯỜNG ĐI</h1>
 
         <div className='flex md:mx-36 gap-5 md:gap-24 flex-col md:flex-row'>
