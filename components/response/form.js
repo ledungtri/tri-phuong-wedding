@@ -22,7 +22,7 @@ function Form() {
     e.preventDefault();
     try {
       await axios.post(
-        "http://bglmautam.com:3030/responses",
+        "https://bglmautam.com:3030/responses",
         response
       );
       router.push("/thanks");
