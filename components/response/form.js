@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useState } from "react";
 import TextInputField from "./textInputField";
 import RadioButtonField from "./radioButtonField";
+import Airtable from "airtable";
 
 function Form() {
   const router = useRouter();
@@ -20,15 +21,17 @@ function Form() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    try {
-      await axios.post(
-        "https://bglmautam.com:3030/responses",
-        response
-      );
+    const base = new Airtable().base('appZHozY0BmskVnvS');
+
+    response.attend = Boolean(response.attend);
+
+    base('Responses').create([{ "fields": response }], (err, records) => {
+      if (err) {
+        console.error(err);
+        return;
+      }
       router.push("/thanks");
-    } catch (error) {
-      console.log(error);
-    }
+    });
   };
 
   return (
