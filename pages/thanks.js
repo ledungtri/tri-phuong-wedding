@@ -13,7 +13,7 @@ function Thank() {
           </div>
           <div className="xl:flex xl:items-center xl:justify-center">
             <button className="xl:hidden border-solid border-amber-200 text-amber-200 font-bold text-xl capitalize border-[4px] w-[260px] h-[50px] rounded-3xl m-2 animate-bounce">
-              <Link href="map">BẢN ĐỒ ĐƯỜNG ĐI</Link>
+              <Link href="/">BẢN ĐỒ ĐƯỜNG ĐI</Link>
             </button>
             <button className="hidden xl:block border-solid border-amber-200 text-amber-200 font-bold text-xl capitalize border-[4px] w-[260px] h-[50px] rounded-3xl m-2 animate-bounce">
               <Link href="/">BẢN ĐỒ ĐƯỜNG ĐI</Link>
