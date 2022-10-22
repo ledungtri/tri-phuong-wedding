@@ -1,9 +1,9 @@
 export default function MapFrame({ title, url, subtitles }) {
   return (
-    <div className="h-full w-full">
+    <div className="grow">
       <h2 className="font-bold text-xl bg-navy/60 rounded-t-full py-2">{title}</h2>
       <iframe
-        className="w-full h-[120px] md:h-[300px]"
+        className="w-full h-full"
         src={url}
         allowFullScreen=""
         loading="eager"

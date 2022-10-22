@@ -25,12 +25,12 @@ function Form() {
 
     response.attend = Boolean(response.attend);
 
-    base('Responses').create([{ "fields": response }], (err, records) => {
+    await base('Responses').create([{ "fields": response }], (err) => {
       if (err) {
         console.error(err);
         return;
       }
-      router.push("/thanks");
+      router.push("/thank_you");
     });
   };
 
